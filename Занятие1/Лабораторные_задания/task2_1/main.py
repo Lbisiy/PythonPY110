@@ -1,7 +1,7 @@
 def task(camel_case_str: str) -> str:
-    return "".join(...)  # TODO отфильтровать только буквы нижнего регистра
+    return "".join(filter(lambda x: x.islower(), camel_case_str))
 
 
 if __name__ == "__main__":
-    word = "AbCdEfGh"
-    print(task(word))
+    camel_case_str = "AbCdEfGh"
+    print(task(camel_case_str))
