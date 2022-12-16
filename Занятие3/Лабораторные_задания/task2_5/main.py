@@ -6,7 +6,7 @@ def task():
     with open(filename) as f:
         json_data = json.load(f)
 
-    map_iterator = map(lambda item: item["score"] * item["weight"], json_data)
+    map_iterator = map(lambda x: x["score"] * x["weight"], json_data)
     return sum(map_iterator)
 
 
